@@ -3,7 +3,7 @@
 
 # How To Use
 What you need to do is just put [repo.zsh-theme](repo.zsh-theme)
-to `ohmyzsh/custom/themes` or ohmyzsh/themes
+to `ohmyzsh/custom/themes` or `ohmyzsh/themes`
 
 - use symbolic link
 ```shell
