@@ -83,6 +83,7 @@ function draw_segment() {
 # - am I root
 # - are there background jobs?
 function show_status() {
+  update_git_vars # update the git stuff every time
   [[ "$_IS_IN_GIT_REPO" = "true" ]] && draw_segment cyan "$_xLmPrefix"
   [[ $RETVAL -ne 0 ]] && draw_segment red "$_xCmdError"
   [[ $UID -eq 0 ]] && draw_segment yellow "$_xIsRoot"
@@ -249,5 +250,3 @@ autoload -Uz add-zsh-hook
 add-zsh-hook precmd time_show
 # Executed just after a command has been read and is about to be executed.
 add-zsh-hook preexec time_keep
-# Executed whenever the current working directory is changed.
-add-zsh-hook chpwd update_git_vars
