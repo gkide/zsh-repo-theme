@@ -40,14 +40,11 @@ function is_in_git_repo() {
   fi
 }
 
-# Current directory of full path with symbolic link resolved
-_THIS_DIR="$(realpath ${0%/*})"
-_GITSTATUS_PY_DIR="$_THIS_DIR/../plugins/git-prompt"
 function update_git_vars() {
   is_in_git_repo
   [[ "$_IS_IN_GIT_REPO" != "true" ]] && return
 
-  local gitstatus="$_GITSTATUS_PY_DIR/gitstatus.py"
+  local gitstatus="$ZSH/plugins/git-prompt/gitstatus.py"
   local repostatus=$(python3 ${gitstatus} 2>/dev/null)
   repostatus=("${(@s: :)repostatus}")
 
