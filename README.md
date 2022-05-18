@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/img/preview-20220518.gif?raw=true" width="200"/>
+  <img src="/img/preview-20220518.gif?raw=true"/>
 </p>
 
 # zsh-repo-theme
