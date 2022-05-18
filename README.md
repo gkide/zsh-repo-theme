@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="/img/preview-20220518.gif?raw=true" width="200"/>
+</p>
+
 # zsh-repo-theme
 [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) theme which shows details git repo information.
 
@@ -13,11 +17,11 @@ cd zsh-repo-theme
 ln -s `pwd`/repo.zsh-theme $ZSH/custom/themes/repo.zsh-theme
 ```
 
-# Prompt information
+# Prompt Information
 
 The prompt message for current working directory is not git repo, it will as
 ```shell
-✘ ☻ ❄ user@host | working-directory | Xms $  .... «Yms»
+✘ ☻ ❄ user@host | working-directory | Xms $               ....             «Yms»
 ```
 - `✘` if last command error, then it shows up
 - `☻` if current user is root, then it shows up
@@ -28,7 +32,7 @@ The prompt message for current working directory is not git repo, it will as
 The prompt message for current working directory is a git repo, it will as
 ```shell
 ╭─ ✘ ☻ ❄ user@host | working-directory | git-config-user-name<git-config-user-email>
-╰─ repo-name § repo-branch(sha1) | ✔↑x↓x✚x✎x⍉x⚑x✖x | Xms $  .... «Yms»
+╰─ repo-name § repo-branch(sha1) | ✔↑x↓x✚x✎x⍉x⚑x✖x | Xms $        ....     «Yms»
 ```
 - `✘` if last command error, then it shows up
 - `☻` if current user is root, then it shows up
